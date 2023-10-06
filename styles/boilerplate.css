@@ -15,19 +15,46 @@ body {
   font-family: "brother-1816", sans-serif;
   font-style: normal;
 }
+nav {
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav li {
+  background-color: var(--accent_clr);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+nav li:hover {
+  transform: scale(1.1);
+}
+nav a {
+  color: var(--light_clr);
+  text-decoration: none;
+}
 main {
   padding: 1rem;
   display: grid;
   place-items: center;
+  gap: 1rem;
 }
 img {
   max-width: 100%;
   object-fit: cover;
 }
 h1,
-h2,h3 {
+h2,
+h3 {
   font-family: "dazzle-unicase", sans-serif;
-  
 }
 h1 {
   font-size: clamp(1.5rem, 6vw, 5rem);
@@ -56,7 +83,7 @@ h5 {
 }
 p {
   max-width: 65ch;
-  padding:1rem ;
+  padding: 1rem;
   line-height: 1.5;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -67,15 +94,17 @@ p.bold {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.opgave{
+.opgave {
   display: grid;
   grid-template-columns: 1fr;
+  width: fit-content;
   background-color: var(--light_clr);
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.75rem;
   gap: 1rem;
   border-radius: 1rem;
 }
-.opgave a{
+.opgave a {
   color: var(--accent_clr);
+  word-break: break-all;
 }
+
