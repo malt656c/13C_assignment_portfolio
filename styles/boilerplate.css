@@ -67,3 +67,15 @@ p.bold {
   font-size: 1.25rem;
   font-weight: 600;
 }
+.opgave{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--light_clr);
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.opgave a{
+  color: var(--accent_clr);
+}
